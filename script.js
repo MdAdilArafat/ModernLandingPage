@@ -1,3 +1,13 @@
+function videoLoad(){
+    let body = document.querySelector(".body")
+    let video = document.querySelector(".video")
+    video.addEventListener("loadeddata",()=>{
+    body.style.display= "block"
+})
+
+}
+
+
 function home(){
     gsap.set(".slidesm",{ scale:5})
 t1 =  gsap.timeline({
@@ -6,7 +16,7 @@ t1 =  gsap.timeline({
         start:"top top",
         end:"bottom bottom",
         scrub:1,
-    }
+    }   
 })
 
 t1.to(".vidiodiv",{
@@ -128,6 +138,7 @@ function craftCards(){
         })
     })
 }
+videoLoad()
 loco()
 home()
 real()

@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body{
+    display: none;
     transition: background-color ease-out .5s;
 }
 :root{
